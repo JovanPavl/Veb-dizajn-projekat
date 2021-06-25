@@ -30,7 +30,7 @@ p {
 
 .primary-button a {
 	display: inline-block;
-	background-color: #f2745f;
+	background-color: orange;
 	color: #fff;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -44,7 +44,7 @@ p {
 .primary-white-button a {
 	display: inline-block;
 	background-color: #fff;
-	color: #f2745f;
+	color: orange;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -134,11 +134,11 @@ p {
 }
 .navbar-inverse .navbar-toggle {
 	margin-top: 22px;
-    border-color: #f2745f;
-    background-color: #f2745f;
+    border-color: orange;
+    background-color: orange;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background-color: #f2745f;
+	background-color: orange;
 }
 bootstrap.min.css:5
 .navbar-toggle {
@@ -216,7 +216,7 @@ section.cook-delecious {
 }
 
 .cook-delecious .cook-content {
-	background-color: #f2745f;
+	background-color: orange;
 	text-align: center;
 	padding: 30px;
 }
@@ -263,7 +263,7 @@ section.cook-delecious {
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 1px;
-	border: 1px solid #da6856;
+	border: 1px solid orange;
 	width: 25px;
 	height: 25px;
 	display: inline-block;
@@ -376,7 +376,7 @@ section#book-table .left-image img {
 .right-info button {
 	width: 100%;
 	display: inline-block;
-	background-color: #f2745f;
+	background-color: orange;
 	color: #fff!important;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -390,7 +390,7 @@ section#book-table .left-image img {
 
 
 section.get-app {
-	background-color: #f2745f;
+	background-color: orange;
 	text-align: center;
 	padding: 60px 0px;
 }
@@ -447,7 +447,7 @@ section.featured-food {
 
 .food-item .price {
 	font-size: 17px;
-	color: #f2745f;
+	color: orange;
 	font-weight: 500;
 	letter-spacing: 0.5px;
 	padding: 8px 14px;
@@ -476,15 +476,42 @@ section.our-- {
 	padding: 100px 0px 70px 0px;
 }
 
-.our-blog .heading h2 {
+.myRecipes .heading h2 {
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 20px;
 	margin-bottom: 80px;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	color: #121212;
+}
+
+
+.myCommentMark h3, .myRecipes h3 {
+	margin-top: 0px;
+}
+
+
+.our-blog .heading h2 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #121212;
+}
+
+.myCommentMark {
+	background-color: #f2f6ff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.myCommentMark .right {
+	padding: 15px;
 }
 
 .blog-post img {
@@ -523,7 +550,7 @@ section.our-- {
 .blog-post .right-content .text-button a {
 	font-size: 13px;
 	font-weight: 500;
-	color: #f2745f;
+	color: orange;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-top: 12px;
@@ -532,18 +559,62 @@ section.our-- {
 
 .blog-post .date {
 	font-size: 17px;
-	color: #f2745f;
+	color: white;
 	font-weight: 500;
 	letter-spacing: 0.5px;
 	padding: 8px 14px;
 	position: absolute;
 	left: 15px;
 	top: 0px;
-	background-color: rgba(250, 250, 250, 0.9);
+	background-color: orange;
 }
 
+.c {
+	padding: 15px;
+}
 
+.comments {
+	padding: 10px;
+	background-color: #f2f6ff;
+}
 
+.comments h3 {
+	text-align: center;
+}
+
+.commentText {
+	color: #121212;
+}
+
+.comment {
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding:15px
+}
+
+.commentAuthor {
+	text-align: right;
+	font-style: italic;
+}
+
+.recipe-comment-mark img{
+	overflow: hidden;
+}
+
+.addComment {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.addComment button {
+	background-color: orange;
+}
+
+#myComment {
+	resize: none;
+}
 
 section.sign-up {
 	padding: 80px 0px;
@@ -607,7 +678,7 @@ footer p {
 
 footer p em {
 	font-style: normal;
-	color: #f2745f;
+	color: orange;
 	font-weight: 500;
 }
 
@@ -635,7 +706,7 @@ footer ul li i {
 }
 
 footer ul li i:hover {
-	background-color: #f2745f;	
+	background-color: orange;	
 }
 
 
@@ -804,7 +875,7 @@ section.dinner-menu .price {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  background: #f2745f;
+  background: orange;
 }
 
 
@@ -829,7 +900,7 @@ section.blog-page .page-number li {
 }
 
 section.blog-page .page-number li.active a {
-	background-color: #f2745f;
+	background-color: orange;
 	color: #fff;
 }
 
@@ -848,8 +919,12 @@ section.blog-page .page-number li a {
 }
 
 section.blog-page .page-number li a:hover {
-	background-color: #f2745f;
+	background-color: orange;
 	color: #fff;
+}
+
+.myRecipes {
+	margin-top:30px;
 }
 
 .recipe img {
@@ -885,7 +960,7 @@ section.blog-page .page-number li a:hover {
 .recipe .down-content .text-button a {
 	font-size: 12px;
 	font-weight: 500;
-	color: #f2745f;
+	color: orange;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-top: 12px;
@@ -943,7 +1018,7 @@ section.blog-page .page-number li a:hover {
 .blog-item .down-content .text-button a {
 	font-size: 13px;
 	font-weight: 500;
-	color: #f2745f;
+	color: orange;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-top: 12px;
@@ -952,14 +1027,14 @@ section.blog-page .page-number li a:hover {
 
 .blog-item .date {
 	font-size: 17px;
-	color: #f2745f;
+	color: orange;
 	font-weight: 500;
 	letter-spacing: 0.5px;
 	padding: 8px 14px;
 	position: absolute;
 	left: 15px;
 	top: 0px;
-	background-color: rgba(250, 250, 250, 0.9);
+	background-color: orange;
 }
 
 
@@ -1024,7 +1099,7 @@ section.contact-us {
 .contact-us button {
 	width: 100%;
 	display: inline-block;
-	background-color: #f2745f;
+	background-color: orange;
 	color: #fff!important;
 	font-size: 13px;
 	text-transform: uppercase;
