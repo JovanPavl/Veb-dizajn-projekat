@@ -150,7 +150,7 @@ bootstrap.min.css:5
     margin-bottom: 8px;
     background-color: transparent;
     background-image: none;
-    border: 1px solid transparent;
+    border: 1px solid tran,sparent;
     border-radius: 4px;
 }
 
@@ -305,7 +305,7 @@ section.services {
 
 section#book-table {
 	padding: 80px 0px;
-	background-image: url(../img/book-bg.jpg);
+	background-image: url(../img/kuvanje.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-position: center center;*/
@@ -778,7 +778,15 @@ section.breakfast-menu .price {
 	color: #121212;
 }
 
+.menu-list {
+	min-height: 200px;
+}
 
+.menu-list a {
+	color: black;
+	font-size: 18px;
+	font-family: 'Spectral', serif;
+}
 
 section.lunch-menu {
 	margin-top: 100px;
