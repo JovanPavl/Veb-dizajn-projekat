@@ -44,11 +44,12 @@ $(document).ready(function(){
     
     ];
 
+    inicjalizacija();
     popuniSveRecepte();
-
+   
 
     function popuniSveRecepte(){
-        localStorage.setItem("recepti", JSON.stringify(recepti));
+        
         popuniRecepte("predjelo");
         popuniRecepte("glavno");
         popuniRecepte("uzina");
@@ -61,6 +62,12 @@ $(document).ready(function(){
             if (recepti[i].kategorija == kategorija) {
                 lista.append($("<li></li>").append($("<a></a>").text(recepti[i].naslov)));
             }
+        }
+    }
+
+    function inicjalizacija(){
+        if (localStorage.getItem("recepti")!=null){
+            recepti = JSON.parse(localStorage.getItem("recepti"));
         }
     }
 });

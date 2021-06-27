@@ -11,18 +11,17 @@ http://www.templatemo.com/tm-507-victory
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
-
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/dodajRecept.js"></script>
     </head>
 
 <body>
@@ -66,21 +65,22 @@ http://www.templatemo.com/tm-507-victory
                 <div class="col-md-offset-2 col-md-8 col-sm-12">
                     <div class="right-info">
                         <h4>Uneti:</h4>
-                        <form id="form-submit" action="" method="get">
+                        <span id="greske"> ss</span>
+                        <form id="form-submit">
                             <div class="row">
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <input type="text" class="form-control"  name="" id="" placeholder="Naziv jela">                                     
+                                        <input type="text" class="form-control" id="naslov" placeholder="Naziv jela">                                     
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <textarea name="" id="" cols="50" rows="10" class="form-control" placeholder="Način pripreme"></textarea>
+                                        <textarea id="priprema" cols="50" rows="10" class="form-control" placeholder="Način pripreme"></textarea>
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <select required class="form-control" name='persons' onchange='this.form()'>
+                                        <select class="form-control" id="kategorija">
                                             <option value="">Grupa recepata</option>
                                             <option value="predjelo">predjelo</option>
                                             <option value="glavno jelo">glavno jelo</option>
@@ -91,13 +91,13 @@ http://www.templatemo.com/tm-507-victory
                                 </div>
                                 <div class="col-md-6">
                                     <fieldset>
-                                        <input name="name" type="name" class="form-control" id="name" placeholder="Trajanje pripreme (min)" required>
+                                        <input type="number" class="form-control" id="trajanje" placeholder="Trajanje pripreme (min)">
                                     </fieldset> 
                                 </div>
 
                                 <div class="col-md-6">
                                     <fieldset>
-                                        <select required class="form-control" name='persons' onchange='this.form()'>
+                                        <select class="form-control" id="tezina">
                                             <option value="">Težina pripreme</option>
                                             <option value="lako">lako</option>
                                             <option value="srednje">srednje</option>
@@ -108,7 +108,7 @@ http://www.templatemo.com/tm-507-victory
                                 
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Dodaj recept</button>
+                                        <button type="button" id="dodavanjeRecepta" class="btn">Dodaj recept</button>
                                     </fieldset>
                                 </div>
                             </div>
