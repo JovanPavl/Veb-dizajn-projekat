@@ -18,11 +18,13 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/padajuciMeni.css">
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/recept.js"></script>
     </head>
 
 <body>
@@ -42,7 +44,18 @@ http://www.templatemo.com/tm-507-victory
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Početna</a></li>
-                        <li><a href="recepti.html"><b>Recepti</b> </a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn"><a href="recepti.html"><b>Recepti</b> </a>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Predjelo</a>
+                                    <a href="#">Glavno jelo</a>
+                                    <a href="#">Desert</a>
+                                </div>
+                            </div>
+                        </li>
+                <!--        <li><a href="recepti.html"><b>Recepti</b> </a></li> -->
                         <li><a href="dodajRecept.html">Dodaj recept </a></li>
                         <li><a href="mojNalog.html">Moj nalog</a></li>
                         <li><a href="oNama.html">O nama</a></li>
@@ -71,7 +84,11 @@ http://www.templatemo.com/tm-507-victory
                             <br>
                             <p>Ovde ide nacin pripreme. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit deleniti quas cum? Deleniti facilis ratione commodi deserunt, autem reiciendis accusantium eum temporibus explicabo vitae. Placeat harum consequatur dolorem, fugiat temporibus reiciendis ipsum iusto praesentium eveniet officia voluptatem? Voluptatum error, ducimus, incidunt quia quis voluptas nesciunt veritatis labore commodi iusto aliquam repellat, rem consectetur magnam possimus quibusdam blanditiis accusantium doloremque? Cupiditate tempora repudiandae iure molestiae. Libero sunt molestiae fugit, maxime similique doloremque earum, natus voluptatem, quas blanditiis optio debitis! Ad reprehenderit nihil odio ut repellat blanditiis eligendi, deleniti, perspiciatis temporibus, modi cumque magni unde! Quia recusandae saepe ullam possimus doloremque.</p>
                             <br>
-                            <img src="img/blog_item_01.jpg" alt="">
+						
+							<iframe width="100%" height="315"
+								src="https://www.youtube.com/embed/DYdOPjjBvm0">
+							</iframe>
+                     <!--       <img src="img/blog_item_01.jpg" alt=""> -->
                         </div>
                         <h3></h3>
                     </div>
@@ -148,6 +165,10 @@ http://www.templatemo.com/tm-507-victory
                             
                         <div class="slidecontainer col-xs-10 col-xs-offset-1 slidecontainer col-md-6 col-md-offset-3 addComment">
                             <input type="range" min="1" max="5" value="5" class="slider" id="myMark">
+                            <br>
+                            <div id = "ocena">
+                                <b>5</b>
+                            </div>
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 addComment">
                             <fieldset>
