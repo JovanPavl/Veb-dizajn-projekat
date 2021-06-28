@@ -21,8 +21,9 @@ http://www.templatemo.com/tm-507-victory
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/recipes.js"></script>
     </head>
 
 <body>
@@ -80,37 +81,9 @@ http://www.templatemo.com/tm-507-victory
                             </div>
                             <div class="col-md-7">
                                 <h2>Predjelo</h2>
-                                <div id="owl-breakfast" class="owl-carousel owl-theme">
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/breakfast_item.jpg" alt="">
-                                            <div class="price">$3.50</div>
-                                            <div class="text-content">
-                                                <h4>Kale Chips Art Party</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/lunch_item.jpg" alt="">
-                                            <div class="price">$7.25</div>
-                                            <div class="text-content">
-                                                <h4>Drink Vinegar Prism</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/dinner_item.jpg" alt="">
-                                            <div class="price">$11.50</div>
-                                            <div class="text-content">
-                                                <h4>Taiyaki Gastro Tousled</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="menu-list">
+                                    <ul id="predjelo">
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -130,37 +103,9 @@ http://www.templatemo.com/tm-507-victory
                         <div class="row">
                             <div class="col-md-7">
                                 <h2>Glavno jelo</h2>
-                                <div id="owl-lunch" class="owl-carousel owl-theme">
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/lunch_item.jpg" alt="">
-                                            <div class="price">$6.50</div>
-                                            <div class="text-content">
-                                                <h4>Mumble Ditch Corn</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/breakfast_item.jpg" alt="">
-                                            <div class="price">$11.75</div>
-                                            <div class="text-content">
-                                                <h4>Wayfare Lomo Core</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/dinner_item.jpg" alt="">
-                                            <div class="price">$16.50</div>
-                                            <div class="text-content">
-                                                <h4>Taiyaki Gastro Tousled</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="menu-list">
+                                    <ul id="glavno">
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -188,37 +133,9 @@ http://www.templatemo.com/tm-507-victory
                             </div>
                             <div class="col-md-7">
                                 <h2>Desert</h2>
-                                <div id="owl-dinner" class="owl-carousel owl-theme">
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/dinner_item.jpg" alt="">
-                                            <div class="price">$8.25</div>
-                                            <div class="text-content">
-                                                <h4>Meal Apples Almonds</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/lunch_item.jpg" alt="">
-                                            <div class="price">$12.50</div>
-                                            <div class="text-content">
-                                                <h4>Ditch Corn Art</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/breakfast_item.jpg" alt="">
-                                            <div class="price">$16.00</div>
-                                            <div class="text-content">
-                                                <h4>Kale Chips Art Party</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="menu-list">
+                                    <ul id="desert">
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -237,37 +154,9 @@ http://www.templatemo.com/tm-507-victory
                         <div class="row">
                             <div class="col-md-7">
                                 <h2>Užina</h2>
-                                <div id="owl-lunch" class="owl-carousel owl-theme">
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/lunch_item.jpg" alt="">
-                                            <div class="price">$6.50</div>
-                                            <div class="text-content">
-                                                <h4>Mumble Ditch Corn</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/breakfast_item.jpg" alt="">
-                                            <div class="price">$11.75</div>
-                                            <div class="text-content">
-                                                <h4>Wayfare Lomo Core</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-12">
-                                        <div class="food-item">
-                                            <img src="img/dinner_item.jpg" alt="">
-                                            <div class="price">$16.50</div>
-                                            <div class="text-content">
-                                                <h4>Taiyaki Gastro Tousled</h4>
-                                                <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean ditcher meal...</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="menu-list">
+                                    <ul id="uzina">
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -293,5 +182,7 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </footer>
 
+
+    
 </body>
 </html>
