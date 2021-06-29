@@ -157,7 +157,8 @@ bootstrap.min.css:5
 
 .banner {
 	padding: 180px 0px;
-	background-image: url(../img/banner-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/naslovna.jpg);
+	/*background-image: url(../img/naslovna.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -714,7 +715,7 @@ footer ul li i:hover {
 
 section.page-heading {
 	padding: 80px 0px;
-	background-image: url(../img/heading-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/recepti.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;

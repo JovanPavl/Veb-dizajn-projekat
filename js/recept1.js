@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 
     function popuniStranicu() {
-        naslov="Pita sa sirom";
+        naslov=localStorage.getItem("prikazRecepta");
         let recept = recepti.find(e => naslov==e.naslov);
         $("#naslov").text(recept.naslov);
         $("#korisnik").text(recept.korisnik);
