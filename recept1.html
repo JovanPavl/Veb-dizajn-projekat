@@ -18,6 +18,7 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/padajuciMeni.css">
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
@@ -43,7 +44,18 @@ http://www.templatemo.com/tm-507-victory
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Početna</a></li>
-                        <li><a href="recepti.html"><b>Recepti</b> </a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn"><a href="recepti.html"><b>Recepti</b> </a>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Predjelo</a>
+                                    <a href="#">Glavno jelo</a>
+                                    <a href="#">Desert</a>
+                                </div>
+                            </div>
+                        </li>
+                <!--        <li><a href="recepti.html"><b>Recepti</b> </a></li> -->
                         <li><a href="dodajRecept.html">Dodaj recept </a></li>
                         <li><a href="mojNalog.html">Moj nalog</a></li>
                         <li><a href="oNama.html">O nama</a></li>
@@ -72,7 +84,9 @@ http://www.templatemo.com/tm-507-victory
                             <br>
                             <p id="priprema"></p>
                             <br>
-                            <img id="video" src=""+ alt="">
+							<iframe width="100%" height="315"
+								src="https://www.youtube.com/embed/DYdOPjjBvm0">
+							</iframe>
                         </div>
                         <h3></h3>
                     </div>
@@ -149,6 +163,10 @@ http://www.templatemo.com/tm-507-victory
                             
                         <div class="slidecontainer col-xs-10 col-xs-offset-1 slidecontainer col-md-6 col-md-offset-3 addComment">
                             <input type="range" min="1" max="5" value="5" class="slider" id="myMark">
+                            <br>
+                            <div id = "ocena">
+                                <b>5</b>
+                            </div>
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 addComment">
                             <fieldset>

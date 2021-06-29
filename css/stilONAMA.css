@@ -1,0 +1,34 @@
+#centar1{
+    text-align: center;
+}
+
+#tekst2{
+    font-size: large;
+    font-weight: 400;
+}
+
+#tekstONAMA{
+    margin-top: 20px;
+    background-color: #f2f6ff;
+    padding:2%;
+    border: solid;
+    border-radius: 6px;
+}
+
+#slike{
+    padding: 10px;
+}
+
+h4{
+    text-align: center;
+}
+
+#unos{
+    border: solid;
+    border-radius: 6px;
+    padding: 2%;
+}
+
+.privremeno{
+    
+}
