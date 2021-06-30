@@ -7,7 +7,7 @@
 Victory Template
 http://www.templatemo.com/tm-507-victory
 -->
-        <title>Victory CSS Web Template</title>
+        <title>KuvaRica - Moj nalog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -22,8 +22,10 @@ http://www.templatemo.com/tm-507-victory
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/mojNalog.js"></script>
     </head>
 
 <body>
@@ -44,9 +46,9 @@ http://www.templatemo.com/tm-507-victory
                     <ul class="nav navbar-nav">
                         <li><a class="sel" href="index.html">Početna</a></li>
                         <li><a href="recepti.html">Recepti</a></li>
-                        <li><a href="blog.html">Dodaj recept</a></li>
-                        <li><a href="contact.html"><b>Moj nalog</b> </a></li>
-                        <li><a href="contact.html">O nama</a></li>
+                        <li><a href="dodajRecept.html">Dodaj recept</a></li>
+                        <li><a href="mojNalog.html"><b>Moj nalog</b> </a></li>
+                        <li><a href="oNama.html">O nama</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -68,56 +70,15 @@ http://www.templatemo.com/tm-507-victory
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row" id="mojiRecepti">
+                <div id="original" class="col-md-6" hidden>
                     <div class="blog-post">
-                        <img src="img/blog_post_01.jpg" alt="">
-                        <div class="date">26 Oct 2017</div>
+                        <img id="slika" src="img/blog_post_01.jpg" alt="">
+                        <div id="ocena" class="date">★</div>
                         <div class="right-content">
-                            <h3><a href="">Naslov</a></h3>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Obriši recept</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="img/blog_post_01.jpg" alt="">
-                        <div class="date">5.0</div>
-                        <div class="right-content">
-                            <a href="">Naslov</a>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Obriši recept</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="img/blog_post_01.jpg" alt="">
-                        <div class="date">26 Oct 2017</div>
-                        <div class="right-content">
-                            <a href="">Naslov</a>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Obriši recept</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post">
-                        <img src="img/blog_post_01.jpg" alt="">
-                        <div class="date">26 Oct 2017</div>
-                        <div class="right-content">
-                            <a href="">Naslov</a>
-                            <p>Skateboard iceland twee tofu shaman crucifix vice before they sold out corn hole occupy drinking vinegar chambra meggings kale chips hexagon...</p>
-                            <div class="text-button">
-                                <a href="#">Obriši recept</a>
-                            </div>
+                            <h3><a id="naslov" href=""></a></h3>
+                            <p id="priprema"></p>
+                            <button id="brisanje" class="btn">Obriši recept</button>
                         </div>
                     </div>
                 </div>

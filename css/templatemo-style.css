@@ -532,13 +532,13 @@ section.our-- {
 	padding: 20px;
 }
 
-.blog-post .right-content h4 {
+.blog-post .right-content h3 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 8px;
 	font-family: 'Spectral', serif;
 	font-size: 21px;
-	color: #121212;
+	color: orange;
 }
 
 .blog-post .right-content span {
@@ -546,6 +546,10 @@ section.our-- {
 	color: #7a7a7a;
 	display: inline-block;
 	margin-bottom: 18px;
+}
+
+.right-content a {
+	color:orange;
 }
 
 .blog-post .right-content .text-button a {
@@ -887,8 +891,14 @@ section.dinner-menu .price {
   background: orange;
 }
 
+.bc ol {
+	padding-top: 20px;
+	background-color: white;
+}
 
-
+.bc a {
+	color: orange;
+}
 
 section.blog-page {
 	margin-top: 100px;
@@ -960,7 +970,7 @@ section.blog-page .page-number li a:hover {
 }
 
 .recipe .down-content span {
-	font-size: 18px;
+	font-size: 15px;
 	color: #7a7a7a;
 	display: inline-block;
 	margin-bottom: 18px;

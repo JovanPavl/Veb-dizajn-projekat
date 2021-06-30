@@ -7,7 +7,11 @@ $(document).ready(function(){
 
     function popuniStranicu() {
         naslov=localStorage.getItem("prikazRecepta");
+        $("title").text("KuvaRica - " + naslov);
         let recept = recepti.find(e => naslov==e.naslov);
+        $("#breadcrumb-kat a").text(recept.kategorija);
+        $("#breadcrumb-kat a").attr("href","kategorija.html");
+        $("#breadcrumb-rec").text(recept.naslov);
         $("#naslov").text(recept.naslov);
         $("#korisnik").text(recept.korisnik);
         $("#tezina").text(recept.tezina);
