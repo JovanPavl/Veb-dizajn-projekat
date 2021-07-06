@@ -54,6 +54,11 @@ $(document).ready(function(){
         document.location.href="recept1.html";
     });
    
+    $(".kat").click(function(){
+        let kat = $(this).text();
+        localStorage.setItem("prikazKategorije", kat);
+        document.location.href="kategorija.html"
+    });
 
     function popuniSveRecepte(){
         

@@ -7,7 +7,7 @@
 Victory Template
 http://www.templatemo.com/tm-507-victory
 -->
-        <title>Victory CSS Web Template</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,11 +18,11 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
-
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/kategorija.js"></script>
     </head>
 
 <body>
@@ -66,56 +66,34 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </section>
 
-    
-    <section class="featured-food">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="bc">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"><a href="recepti.html">Recepti</a></li>
+                            <li id="breadcrumb-kat" class="breadcrumb-item active" aria-current="page"><a href=""></a></li>
+                        </ol>
+                    </nav>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section class="featured-food">
+        <div class="container" >
+            <div class="row" id="sviRecepti">
+                <div class="col-md-3 recept-kategorija" id="original" hidden> 
                     <div class="food-item">
-                        <h2>Recept 1</h2>
-                        <img src="img/breakfast_item.jpg" alt="">
-                        <div class="price">5.0</div>
+                        <h2><a id="naslov">Recept 1</a> </h2>
+                        <img src="img/breakfast_item.jpg" alt="" id="slika">
+                        <div class="price" id="ocena"> ★</div>
                         <div class="text-content">
-                            <h4>Kale Chips Art Party</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
+                            <p id="priprema">Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="food-item">
-                        <h2>Recept 2</h2>
-                        <img src="img/lunch_item.jpg" alt="">
-                        <div class="price">4.9</div>
-                        <div class="text-content">
-                            <h4>Taiyaki Gastro Tousled</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="food-item">
-                        <h2>Recept 3
-                        </h2>
-                        <img src="img/dinner_item.jpg" alt="">
-                        <div class="price">4.8</div>
-                        <div class="text-content">
-                            <h4>Batch Squid Jean Shorts</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="food-item">
-                        <h2>Recept 3
-                        </h2>
-                        <img src="img/dinner_item.jpg" alt="">
-                        <div class="price">4.8</div>
-                        <div class="text-content">
-                            <h4>Batch Squid Jean Shorts</h4>
-                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>

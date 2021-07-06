@@ -433,13 +433,15 @@ section.featured-food {
 	margin-top: 0px;
 	margin-bottom: 30px;
 	padding-bottom: 8px;
-	font-family: 'Spectral', serif;
 	font-size: 28px;
 	width: 100%;
 	border-bottom: 1px solid #d9dde5;
-	color: #121212;
+	color: orange;
 }
 
+.food-item a {
+	color: orange;
+}
 .food-item img {
 	width: 100%;
 	overflow: hidden;
@@ -523,6 +525,14 @@ section.our-- {
 .blog-post {
 	margin-bottom: 30px;
 	display: inline-block;
+}
+
+#kKorisnik {
+	font-size: 14px;
+}
+
+#kNaslov {
+	color: orange;
 }
 
 .blog-post .right-content {
@@ -783,14 +793,25 @@ section.breakfast-menu .price {
 	color: #121212;
 }
 
+.breakfast-menu-content h2 a, .lunch-menu-content h2 a {
+	color:orange;
+}
+
+.recept-kategorija {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
 .menu-list {
 	min-height: 200px;
 }
 
 .menu-list a {
 	color: black;
-	font-size: 18px;
-	font-family: 'Spectral', serif;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: lighter;
 }
 
 section.lunch-menu {
