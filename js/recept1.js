@@ -33,8 +33,8 @@ $(document).ready(function(){
         file.setFontSize(25);
         file.text($("#naslov").text(),10,10);
         file.setFontSize(15);
-        file.text($("#trajanje").text(),10,30);
-        file.text($("#tezina").text(),10,40);
+        file.text("Trajanje " + $("#trajanje").text(),10,30);
+        file.text("Tezina " + $("#tezina").text(),10,40);
         file.setFontSize(20);
         file.text("Uputstvo",10,75);
         file.setFontSize(15);

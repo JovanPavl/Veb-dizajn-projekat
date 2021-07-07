@@ -26,7 +26,7 @@ $(document).ready(function(){
     $("#PoOcenama").click(function(){
         if(recepti.length == 0) return;
         for(let i = 0; i < recepti.length; i++){
-            let value = izracunajOcenu(recepti[i].naslov), id = 0;
+            let value = izracunajOcenu(recepti[i].naslov), id = i;
             for(let j = i + 1; j < recepti.length; j++){
                 let tmp1 = izracunajOcenu(recepti[j].naslov);
                 if(tmp1 > value){
@@ -60,10 +60,14 @@ $(document).ready(function(){
     }));
     $("#PoTezini").click(function(){
         if(recepti.length == 0) return;
+    /*    for(let i = 0; i < recepti.length; i++){
+            alert("Ovde " + recepti[i].naslov + " " + recepti[i].tezina);
+        }*/
+        
         for(let i = 0; i < recepti.length; i++){
-            let value = uzmiTezinu(recepti[i].tezina), id = 0;
+            let value = parseInt(recepti[i].tezina), id = i;
             for(let j = i + 1; j < recepti.length; j++){
-                let tmp1 = uzmiTezinu(recepti[j].tezina);
+                let tmp1 = parseInt(recepti[j].tezina);
                 if(tmp1 < value){
                     value = tmp1;
                     id = j;
@@ -103,14 +107,16 @@ $(document).ready(function(){
         else return (sum/o.length).toFixed(2);
     }
 
-    function uzmiTezinu(t){
+  /*  function uzmiTezinu(t){
         for(let i = 0; i < tezine.length; i++){
             if(tezine[i] == t){
+                alert("Za " + t + "vraca " + i);
                 return i;
             }
         }
+        alert("Za " + t + "vraca -1");
         return -1;
-    }
+    }*/
     function inicijalizacija() {
         recepti = JSON.parse(localStorage.getItem("recepti"));
         korisnik = "Milka"
