@@ -90,7 +90,7 @@ $(document).ready(function(){
     }
 
     function inicjalizacija(){
-        localStorage.setItem("recepti",JSON.stringify(null));
+        /*localStorage.setItem("recepti",JSON.stringify(null));*/
         if (localStorage.getItem("recepti")!=null){
             recepti = JSON.parse(localStorage.getItem("recepti"));
         }
