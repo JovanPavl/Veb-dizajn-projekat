@@ -19,6 +19,7 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link rel="stylesheet" href="css/padajuciMeni.css">
+        <link rel="stylesheet" href="css/sviRecepti.css">
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
@@ -28,46 +29,45 @@ http://www.templatemo.com/tm-507-victory
 
     </head>
 
-<body>
-    <div class="header">
-        <div class="container">
-            <a href="#" class="navbar-brand scroll-top">Kuvanje</a>
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Početna</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn"><a href="recepti.html"><b>Recepti</b> </a>
+    <body>
+        <div class="header">
+            <div class="container">
+                <img class="nabar-brand scroll-top" src="img/logo.png" alt="">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="sel" href="index.html">Početna</a></li>
+                            <li><a href="recepti.html"><b>Recepti</b></a></li>
+                            <li><a href="dodajRecept.html">Dodaj recept</a></li>
+                            <li><a href="mojNalog.html">Moj nalog</a></li>
+                            <li><a href="oNama.html">O nama</a></li>
+                            <li>                            
+                                <div class="dropdown">
+                                <button class="dropbtn"><a href="#">˅ Jezik</a>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#">Predjelo</a>
-                                    <a href="#">Glavno jelo</a>
-                                    <a href="#">Desert</a>
+                                    <a href="#">Srpski</a>
+                                    <a href="#">Engleski</a>
                                 </div>
-                            </div>
-                        </li>
-                <!--        <li><a href="recepti.html"><b>Recepti</b> </a></li> -->
-                        <li><a href="dodajRecept.html">Dodaj recept </a></li>
-                        <li><a href="mojNalog.html">Moj nalog</a></li>
-                        <li><a href="oNama.html">O nama</a></li>
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.navbar-collapse-->
+                </nav>
+                <!--/.navbar-->
+            </div>
+            <!--/.container-->
         </div>
-        <!--/.container-->
-    </div>
 
     <section>
         <div class="container">
@@ -93,7 +93,14 @@ http://www.templatemo.com/tm-507-victory
                     </div>
                 </div>
             </div>
-            <div class="row" id="mojiRecepti">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6" style="text-align: center;" id="searchBar">
+                        <input type="text" id="nazivJela" placeholder="pretražite jelo..">
+                        &nbsp; Sortiraj po: &nbsp;  tezini &nbsp;
+                        <input type="radio" id="PoOcenama" name="ime">
+                        &nbsp; oceni &nbsp;
+                        <input type="radio" id="PoTezini" name="ime">
+                </div>
                 <div id="original" class="col-md-6" hidden>
                     <div class="blog-post">
                         <img id="slika" src="img/blog_post_01.jpg" alt="">
@@ -104,6 +111,11 @@ http://www.templatemo.com/tm-507-victory
                         </div>
                     </div>
                 </div>
+            </div>
+            <br>
+            <br>
+            <div class="row" id="mojiRecepti">
+                
             </div>
         </div>
     </section>
@@ -120,6 +132,19 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </footer>
 
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
+    <script src="js/vendor/bootstrap.min.js"></script> 
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+
+    </script>
 </body>
 </html>

@@ -1,10 +1,9 @@
 $(document).ready(function(){
     let recepti;
     let korisnik;
-    
     inicijalizacija();
     popuniStranicu();
-
+    let tezine = ['veoma lako', 'lako', 'srednje', 'tesko', 'veoma teško'];
 
     function popuniStranicu() {
 
@@ -23,9 +22,58 @@ $(document).ready(function(){
             $("#i" + i + " a").on("click", prikazRecepta);
             $("#i" + i + " a").attr("href", null);
         }
-
     }
-
+    $("#PoOcenama").click(function(){
+        if(recepti.length == 0) return;
+        for(let i = 0; i < recepti.length; i++){
+            let value = izracunajOcenu(recepti[i].naslov), id = 0;
+            for(let j = i + 1; j < recepti.length; j++){
+                let tmp1 = izracunajOcenu(recepti[j].naslov);
+                if(tmp1 > value){
+                    value = tmp1;
+                    id = j;
+                }
+            }
+            if(i!= id)  [recepti[id],recepti[i]] = [recepti[i],recepti[id]];
+        }
+        $("#mojiRecepti").empty();
+        popuniStranicu();
+    });
+    $("#nazivJela").keyup((function(){
+        let tmp = $("#nazivJela").val();            
+        let jArray = [];
+        for(let i = 0; i < recepti.length; i++){
+            jArray.push(recepti[i].naslov);
+            $("#i"+i).prop("hidden",true);
+        }
+        let emptyArray = jArray.filter((data)=>{                
+            return data.toLocaleLowerCase().includes(tmp.toLocaleLowerCase()); 
+        });
+        for(let i = 0; i < recepti.length; i++){
+            for(let j = 0; j < emptyArray.length; j++){
+                if(emptyArray[j] == recepti[i].naslov){
+                    $("#i" + i).prop("hidden",false);
+                    break;
+                }
+            }
+        }
+    }));
+    $("#PoTezini").click(function(){
+        if(recepti.length == 0) return;
+        for(let i = 0; i < recepti.length; i++){
+            let value = uzmiTezinu(recepti[i].tezina), id = 0;
+            for(let j = i + 1; j < recepti.length; j++){
+                let tmp1 = uzmiTezinu(recepti[j].tezina);
+                if(tmp1 < value){
+                    value = tmp1;
+                    id = j;
+                }
+            }
+            if(i!= id)  [recepti[id],recepti[i]] = [recepti[i],recepti[id]];
+        }
+        $("#mojiRecepti").empty();
+        popuniStranicu();
+    });
     $(".blog-post a").click(function(){
         let naslov = $(this).text();
         localStorage.setItem("prikazRecepta", naslov);
@@ -55,7 +103,14 @@ $(document).ready(function(){
         else return (sum/o.length).toFixed(2);
     }
 
-
+    function uzmiTezinu(t){
+        for(let i = 0; i < tezine.length; i++){
+            if(tezine[i] == t){
+                return i;
+            }
+        }
+        return -1;
+    }
     function inicijalizacija() {
         recepti = JSON.parse(localStorage.getItem("recepti"));
         korisnik = "Milka"

@@ -1,0 +1,13 @@
+#searchBar{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f2f6ff;
+    padding:2%;
+}
+
+#nazivJela{
+    border-radius: 6px;
+    border: solid;
+    width: 200px;
+    height: 30px;
+}

@@ -19,12 +19,28 @@ $(document).ready(function(){
         $("#naslov").text(recept.naslov);
         $("#korisnik").text(recept.korisnik);
         $("#tezina").text(recept.tezina);
-        $("#trajanje").text(recept.trajanje);
+        $("#trajanje").text(recept.trajanje + " minuta");
         $("#priprema").text(recept.priprema);
-        $("#slika").attr("src", "img/"+recept.slika);
-        /* dodati video */
+        $("#slika").attr("src","img/" +recept.slika);
+        $("#slika2").attr("src","img/" +recept.slika2);
+        $("#slika3").attr("src","img/" +recept.slika3);
+        $("#ytVideo").attr("src","https://www.youtube.com/embed/" + recept.video);          //dodaj video
         dodajKomentare();
     }
+
+    $("#pdfFajl").click(function(){
+        let file = new jsPDF();
+        file.setFontSize(25);
+        file.text($("#naslov").text(),10,10);
+        file.setFontSize(15);
+        file.text($("#trajanje").text(),10,30);
+        file.text($("#tezina").text(),10,40);
+        file.setFontSize(20);
+        file.text("Uputstvo",10,75);
+        file.setFontSize(15);
+        file.text(file.splitTextToSize($("#priprema").text(),180),10,90);
+        file.save("" + $("#naslov").text() + ".pdf");
+    })
 
     function izracunajOcnenu(naslov){
         o = ocene.filter(e => e.naslov==naslov);
