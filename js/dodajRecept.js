@@ -14,17 +14,11 @@ $(document).ready(function() {
         let l = tmp.length - 1;
         if (nas=="" || pri=="" || tez=="" || tra=="" || kat=="") {
             $("#greske").text("Unesite sve podatke!");
-            alert(nas);
-            alert(pri);
-            alert(tez);
-            alert(tra);
-            alert(kat);
-            alert("a");
             return;
         }
-        let korisnik = JSON.parse(localStorage.getItem("korisnik"));
+        let kor = localStorage.getItem("ulogovan");
         recepti.push({
-            korisnik:korisnik,
+            korisnik:kor,
             naslov: nas,
             priprema: pri,
             tezina: tez,

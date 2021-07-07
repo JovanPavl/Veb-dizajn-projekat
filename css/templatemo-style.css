@@ -337,7 +337,7 @@ section#book-table .left-image img {
 
 .right-info h4 {
 	margin-top: 0px;
-	font-family: 'Spectral', serif;
+	font-family: Arial;
 	font-size: 28px;
 }
 
@@ -388,6 +388,67 @@ section#book-table .left-image img {
 	letter-spacing: 0.5px;
 }
 
+
+
+.right-info2 {
+	height: 360px;
+	background-color: #fff;
+	margin-left: -30px;
+	padding: 30px;
+}
+
+.right-info2 h4 {
+	margin-top: 0px;
+	font-family: Arial;
+	font-size: 28px;
+}
+
+.right-info2 textarea {
+	resize: none;
+}
+
+.right-info2 select {
+	border-right: none;
+	border-left: none;
+	margin-top: 30px;
+
+	border-top: none;
+	width: 100%;
+	outline: none;
+	border-bottom: 1px solid #eee;	
+	font-size: 14px;
+	color: #9a9a9a;
+	padding-left: 10px;
+	height: 40px;
+}
+
+.right-info2 input {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	box-shadow: none;
+	outline: none;
+	padding: 19px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid #eee;
+	font-size: 14px;
+	color: #9a9a9a;
+}
+
+.right-info2 button {
+	width: 100%;
+	display: inline-block;
+	background-color: orange;
+	color: #fff!important;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
 .fajl {
 	padding-top: 0;
 	margin-top: -30px;
@@ -1207,6 +1268,15 @@ section.map #map {
 	.right-info button {
 		margin-top: 30px;
 	}
+	.right-info2 {
+		height: auto;
+		background-color: #fff;
+		margin-left: 0px;
+		padding: 30px;
+	}
+	.right-info2 button {
+		margin-top: 30px;
+	}
 	.blog-post img {
 		width: 100%;
 		overflow: hidden;
@@ -1317,6 +1387,21 @@ section.map #map {
 		margin-top: 0px;
 	}
 	.right-info button {
+		margin-top: 30px;
+	}
+	.right-info2 {
+		height: auto;
+		background-color: #fff;
+		margin-left: 0px;
+		padding: 30px;
+	}
+	.right-info2 select {
+		margin-top: 30px;
+	}
+	.right-info2 select.person {
+		margin-top: 0px;
+	}
+	.right-info2 button {
 		margin-top: 30px;
 	}
 	.blog-post img {

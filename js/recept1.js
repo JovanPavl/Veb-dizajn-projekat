@@ -28,6 +28,14 @@ $(document).ready(function(){
         dodajKomentare();
     }
 
+
+    $(".aaa a").click(function(){
+        let kat = $(this).text();
+        localStorage.setItem("prikazKategorije", kat);
+        document.location.href="kategorija.html"
+    });
+
+
     $("#pdfFajl").click(function(){
         let file = new jsPDF();
         file.setFontSize(25);
@@ -54,7 +62,7 @@ $(document).ready(function(){
 
     $("#dugmeKomentar").click(function(){
         let t = $("#myComment").val();
-        let k = "Milka";
+        let k = localStorage.getItem("ulogovan");
         let n = $("#naslov").text();
         let kom = komentari.find(e => e.naslov==n && e.korisnik==k);
         if (kom!=null) {
@@ -96,7 +104,7 @@ $(document).ready(function(){
 
     $("#dugmeOcena").click(function(){
         let o = $("#myMark").val();
-        let k = "Milka";
+        let k = localStorage.getItem("ulogovan");
         let n = $("#naslov").text();
         let oc= ocene.find(e => e.naslov==n && e.korisnik==k);
         if (oc!=null) {
@@ -116,5 +124,6 @@ $(document).ready(function(){
         recepti = JSON.parse(localStorage.getItem("recepti"));
         komentari = JSON.parse(localStorage.getItem("komentari"));
         ocene = JSON.parse(localStorage.getItem("ocene"));
+        
     }
 });

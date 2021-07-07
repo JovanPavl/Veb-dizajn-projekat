@@ -101,12 +101,11 @@ $(document).ready(function(){
         else return (sum/o.length).toFixed(2);
     }
 
-
     function inicijalizacija() {
         recepti = JSON.parse(localStorage.getItem("recepti"));
-        korisnik = "Milka"
+        korisnik = localStorage.getItem("ulogovan");
         ocene = JSON.parse(localStorage.getItem("ocene"));
         komentari = JSON.parse(localStorage.getItem("komentari"));
-    
     }
+
 });
