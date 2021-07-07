@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     $("#dugmeKomentar").click(function(){
         let t = $("#myComment").val();
-        let k = "Milka";
+        let k = localStorage.getItem("ulogovan");
         let n = $("#naslov").text();
         let kom = komentari.find(e => e.naslov==n && e.korisnik==k);
         if (kom!=null) {
@@ -104,7 +104,7 @@ $(document).ready(function(){
 
     $("#dugmeOcena").click(function(){
         let o = $("#myMark").val();
-        let k = "Milka";
+        let k = localStorage.getItem("ulogovan");
         let n = $("#naslov").text();
         let oc= ocene.find(e => e.naslov==n && e.korisnik==k);
         if (oc!=null) {
@@ -124,5 +124,6 @@ $(document).ready(function(){
         recepti = JSON.parse(localStorage.getItem("recepti"));
         komentari = JSON.parse(localStorage.getItem("komentari"));
         ocene = JSON.parse(localStorage.getItem("ocene"));
+        
     }
 });
