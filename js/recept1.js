@@ -28,6 +28,14 @@ $(document).ready(function(){
         dodajKomentare();
     }
 
+
+    $(".aaa a").click(function(){
+        let kat = $(this).text();
+        localStorage.setItem("prikazKategorije", kat);
+        document.location.href="kategorija.html"
+    });
+
+
     $("#pdfFajl").click(function(){
         let file = new jsPDF();
         file.setFontSize(25);
