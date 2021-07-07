@@ -18,6 +18,7 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/padajuciMeni.css">
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
@@ -26,36 +27,45 @@ http://www.templatemo.com/tm-507-victory
         <script src="js/recepti.js"></script>
     </head>
 
-<body>
-    <div class="header">
-        <div class="container">
-            <a href="#" class="navbar-brand scroll-top">Kuvanje</a>
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="recepti.html"><b>Recepti</b></a></li>
-                        <li><a href="dodajRecept.html">Dodaj recept</a></li>
-                        <li><a href="mojNalog.html">Moj nalog</a></li>
-                        <li><a href="oNama.html">O nama</a></li>
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
+    <body>
+        <div class="header">
+            <div class="container">
+                <img class="nabar-brand scroll-top" src="img/logo.png" alt="">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="sel" href="index.html">Početna</a></li>
+                            <li><a href="recepti.html"><b>Recepti</b></a></li>
+                            <li><a href="dodajRecept.html">Dodaj recept</a></li>
+                            <li><a href="mojNalog.html">Moj nalog</a></li>
+                            <li><a href="oNama.html">O nama</a></li>
+                            <li>                            
+                                <div class="dropdown">
+                                <button class="dropbtn"><a href="#">˅ Jezik</a>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Srpski</a>
+                                    <a href="#">Engleski</a>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.navbar-collapse-->
+                </nav>
+                <!--/.navbar-->
+            </div>
+            <!--/.container-->
         </div>
-        <!--/.container-->
-    </div>
-    <!--/.header-->
 
     <section class="page-heading">
         <div class="container">
@@ -196,6 +206,20 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </footer>
 
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script> 
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+
+    </script>
 
     
 </body>

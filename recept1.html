@@ -28,46 +28,45 @@ http://www.templatemo.com/tm-507-victory
         <script src="js/recept.js"></script>
     </head>
 
-<body>
-    <div class="header">
-        <div class="container">
-            <a href="#" class="navbar-brand scroll-top">Kuvanje</a>
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Početna</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn"><a href="recepti.html"><b>Recepti</b> </a>
+    <body>
+        <div class="header">
+            <div class="container">
+                <img class="nabar-brand scroll-top" src="img/logo.png" alt="">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="sel" href="index.html">Početna</a></li>
+                            <li><a href="recepti.html"><b>Recepti</b></a></li>
+                            <li><a href="dodajRecept.html">Dodaj recept</a></li>
+                            <li><a href="mojNalog.html">Moj nalog</a></li>
+                            <li><a href="oNama.html">O nama</a></li>
+                            <li>                            
+                                <div class="dropdown">
+                                <button class="dropbtn"><a href="#">˅ Jezik</a>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#">Predjelo</a>
-                                    <a href="#">Glavno jelo</a>
-                                    <a href="#">Desert</a>
+                                    <a href="#">Srpski</a>
+                                    <a href="#">Engleski</a>
                                 </div>
-                            </div>
-                        </li>
-                <!--        <li><a href="recepti.html"><b>Recepti</b> </a></li> -->
-                        <li><a href="dodajRecept.html">Dodaj recept </a></li>
-                        <li><a href="mojNalog.html">Moj nalog</a></li>
-                        <li><a href="oNama.html">O nama</a></li>
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.navbar-collapse-->
+                </nav>
+                <!--/.navbar-->
+            </div>
+            <!--/.container-->
         </div>
-        <!--/.container-->
-    </div>
 
     <section>
         <div class="container">
@@ -100,15 +99,15 @@ http://www.templatemo.com/tm-507-victory
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                               <div class="item active">
-                                <img src="img/kuvanje.jpg" alt="Los Angeles">
+                                <img src="" alt="Los Angeles" id="slika">
                               </div>
                           
                               <div class="item">
-                                <img src="img/pitaSaSirom.jpg" alt="Chicago">
+                                <img src="" alt="Chicago" id="slika2">
                               </div>
                           
                               <div class="item">
-                                <img src="img/rolat.jpg" alt="New York">
+                                <img src="" alt="New York" id="slika3">
                               </div>
                             </div>
                           
@@ -123,7 +122,6 @@ http://www.templatemo.com/tm-507-victory
                             </a>
                           </div>
                           
-                        <img id="slika" src="" alt="">
                         <div class="mark" id="ocena1"></div>
                         <div class="down-content">
                             <h3 id="naslov">Naziv jela</h3>
@@ -131,10 +129,12 @@ http://www.templatemo.com/tm-507-victory
                             <span>Vreme pripreme:&nbsp;</span><span id="trajanje"></span><br>
                             <span>Težina:&nbsp;</span><span id="tezina">Tezina</span>
                             <br>
+                            <span><a style="color: gray;" id ="pdfFajl">pdf recepta</a></span>
+                            <br>
                             <br>
                             <p id="priprema"></p>
                             <br>
-							<iframe width="100%" height="315"
+							<iframe width="100%" height="315" id="ytVideo"
 								src="https://www.youtube.com/embed/DYdOPjjBvm0">
 							</iframe>
                         </div>
@@ -218,6 +218,21 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script> 
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+
+    </script>
 
 </body>
 </html>
