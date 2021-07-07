@@ -19,7 +19,8 @@ $(document).ready(function(){
             $("#i"+ i + " #naslov").text(recept.naslov);
             $("#i"+ i + " #priprema").text(recept.priprema.substring(0, 100)+ "...");
             $("#i"+ i + " #slika").attr("src", "img/"+recept.slika);
-            $("#i"+ i + " #ocena").text("5.0" + $("#original #ocena").text())
+            let o = izracunajOcenu(recept.naslov);
+            $("#i"+ i + " #ocena").text(o + "★")
             $("#i" + i + " button").on("click", brisanjeRecepta);
             $("#i" + i + " a").on("click", prikazRecepta);
             $("#i" + i + " a").attr("href", null);
@@ -27,6 +28,18 @@ $(document).ready(function(){
 
         dodajKomentareOcene();
     }
+
+    $(".blog-post a").click(function(){
+        let naslov = $(this).text();
+        localStorage.setItem("prikazRecepta", naslov);
+        document.location.href="recept1.html";
+    });
+
+    $(".myCommentMark a").click(function(){
+        let naslov = $(this).text();
+        localStorage.setItem("prikazRecepta", naslov);
+        document.location.href="recept1.html";
+    });
 
     $("#brisanje").click(brisanjeRecepta);
 
@@ -77,6 +90,17 @@ $(document).ready(function(){
         localStorage.setItem("prikazRecepta", naslov);
         document.location.href="recept1.html";
     }
+
+    function izracunajOcenu(naslov){
+        o = ocene.filter(e => e.naslov==naslov);
+        let sum = 0;
+        for (let i = 0; i < o.length; i++) {
+            sum+=parseFloat(o[i].ocena);
+        }
+        if (o.length == 0) return 0.00;
+        else return (sum/o.length).toFixed(2);
+    }
+
 
     function inicijalizacija() {
         recepti = JSON.parse(localStorage.getItem("recepti"));

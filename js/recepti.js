@@ -47,6 +47,9 @@ $(document).ready(function(){
     inicjalizacija();
     popuniSveRecepte();
 
+    $("#dugmePretraga").click(function(){
+        document.location.href="sviRecepti.html";
+    });
 
     $(".menu-list a").click(function(){
         let naslov = $(this).text();

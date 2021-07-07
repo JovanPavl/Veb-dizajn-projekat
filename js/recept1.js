@@ -15,7 +15,7 @@ $(document).ready(function(){
 
        
         let o = izracunajOcnenu(naslov);
-        $("#ocena").text(o + "★")
+        $("#ocena1").text(o + "★")
         $("#naslov").text(recept.naslov);
         $("#korisnik").text(recept.korisnik);
         $("#tezina").text(recept.tezina);
