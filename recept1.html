@@ -90,7 +90,7 @@ http://www.templatemo.com/tm-507-victory
                 <div class="col-md-8 col-md-offset-2">
                     <div class="recipe">
                         <img id="slika" src="" alt="">
-                        <div class="mark">4.7 ★</div>
+                        <div class="mark" id="ocena"></div>
                         <div class="down-content">
                             <h3 id="naslov">Naziv jela</h3>
                             <span id="korisnik"></span><br>
@@ -116,36 +116,12 @@ http://www.templatemo.com/tm-507-victory
         <div class="container">
             <div class="row c">
                 
-                <div class="col-md-8 col-md-offset-2 comments">
+                <div class="col-md-8 col-md-offset-2 comments" id="sviKomentari">
                     <h3>Komentari</h3>
-                    <div class="row">
+                    <div class="row" id="original" hidden>
                         <div class="col-xs-10 col-xs-offset-1 comment">
-                            <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
-                            <p class="commentAuthor"> -Ime prezime</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 comment">
-                            <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
-                            <p class="commentAuthor"> -Ime prezime</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 comment">
-                            <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
-                            <p class="commentAuthor"> -Ime prezime</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 comment">
-                            <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
-                            <p class="commentAuthor"> -Ime prezime</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 comment">
-                            <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
-                            <p class="commentAuthor"> -Ime prezime</p>
+                            <p class="commentText" id="komTekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
+                            <p class="commentAuthor" id="komKorisnik"> -Ime prezime</p>
                         </div>
                     </div>
                     
@@ -159,7 +135,7 @@ http://www.templatemo.com/tm-507-victory
         <div class="container">
             <div class="row c">
                 <div class="col-md-8 col-md-offset-2 comments">
-                    <form id="form-submit" action="" method="get">
+                    <div id="form-submit" action="" method="get">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1 addComment">
                                 <fieldset>
@@ -169,12 +145,12 @@ http://www.templatemo.com/tm-507-victory
                             
                             <div class="col-xs-10 col-xs-offset-1 addComment">
                                 <fieldset>
-                                    <button type="submit" class="btn">Dodaj komentar</button>
+                                    <button type="submit" id="dugmeKomentar" class="btn">Dodaj komentar</button>
                                 </fieldset>
                             </div>
                         </div>
-                    </form>
-                    <form action="">
+                    </div>
+                    <div>
                         <div class="row">
                             
                         <div class="slidecontainer col-xs-10 col-xs-offset-1 slidecontainer col-md-6 col-md-offset-3 addComment">
@@ -186,11 +162,11 @@ http://www.templatemo.com/tm-507-victory
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 addComment">
                             <fieldset>
-                                <button type="submit" class="btn">Dodaj ocenu</button>
+                                <button type="submit" class="btn" id="dugmeOcena">Dodaj ocenu</button>
                             </fieldset>
                         </div>
                     </div>
-                    </form>
+                </div>
                 </div>
             </div>
 
