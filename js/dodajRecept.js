@@ -12,14 +12,9 @@ $(document).ready(function() {
 
         if (nas=="" || pri=="" || tez=="" || tra=="" || kat=="") {
             $("#greske").text("Unesite sve podatke!");
-            alert(nas);
-            alert(pri);
-            alert(tez);
-            alert(tra);
-            alert(kat);
-            alert("a");
             return;
         }
+        let kor = localStorage.getItem("ulogovan");
 
         recepti.push({
             naslov: nas,
@@ -28,7 +23,8 @@ $(document).ready(function() {
             trajanje: tra,
             kategorija: kat,
             video:"",
-            slika:""
+            slika:"",
+            korisnik: kor
         });
         localStorage.setItem("recepti", JSON.stringify(recepti));
         $("greske").text("Recept je uspešno dodat.");
