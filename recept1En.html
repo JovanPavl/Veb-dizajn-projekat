@@ -45,28 +45,30 @@ http://www.templatemo.com/tm-507-victory
                     <!--/.navbar-header-->
                     <div id="main-nav" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a class="sel" href="index.html">Početna</a></li>
+                            <li><a class="sel" href="indexEn.html">Main page</a></li>
                             <li>                                
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="recepti.html"><b>˅ Recepti</b></a>
-                                </button>
-                                <div class="dropdown-content">
-                                    <a id="predjelo">Predjelo</a>
-                                    <a id="glavnoJelo">Glavno jelo</a>
-                                    <a id="desert">Desert</a>
-                                    <a id="užina">Užina</a>
+                                    <button class="dropbtn"><a href="receptiEn.html">
+                                       <b>˅ Recipes</b> </a>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a id="predjelo">Appetizer</a>
+                                        <a id="glavnoJelo">Main course</a>
+                                        <a id="desert">Desert</a>
+                                        <a id="užina">Snack</a>
+                                    </div>
                                 </div>
-                            </div></li>
-                            <li><a href="dodajRecept.html">Dodaj recept</a></li>
-                            <li><a href="mojNalog.html">Moj nalog</a></li>
-                            <li><a href="oNama.html">O nama</a></li>
+                            </li>
+                            <li><a href="dodajReceptEn.html">Add new Recipe</a></li>
+                            <li><a href="mojNalogEn.html">My profile</a></li>
+                            <li><a href="oNamaEn.html">About us</a></li>
                             <li>                            
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="#">˅ Jezik</a>
+                                <button class="dropbtn"><a href="#">˅ Language</a>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#">Srpski</a>
-                                    <a href="recept1En.html">Engleski</a>
+                                    <a href="recept1.html">Serbian</a>
+                                    <a href="#">English</a>
                                 </div>
                                 </div>
                             </li>
@@ -78,6 +80,7 @@ http://www.templatemo.com/tm-507-victory
             </div>
             <!--/.container-->
         </div>
+        <!--/.header-->
 
     <section>
         <div class="container">
@@ -85,7 +88,7 @@ http://www.templatemo.com/tm-507-victory
                 <div class="col-md-8 col-md-offset-2 bc">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item" aria-current="page"><a href="recepti.html">Recepti</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="recepti.html">Recipe</a></li>
                             <li id="breadcrumb-kat" class="breadcrumb-item aaa" aria-current="page"><a></a> </li>
                             <li id="breadcrumb-rec" class="breadcrumb-item active" aria-current="page"><a href=""></a></li>
                         </ol>
@@ -135,12 +138,12 @@ http://www.templatemo.com/tm-507-victory
                           
                         <div class="mark" id="ocena1"></div>
                         <div class="down-content">
-                            <h3 id="naslov">Naziv jela</h3>
+                            <h3 id="naslov">Name of dish</h3>
                             <span id="korisnik"></span><br>
-                            <span>Vreme pripreme:&nbsp;</span><span id="trajanje"></span><br>
-                            <span>Težina:&nbsp;</span><span id="tezina">Tezina</span>
+                            <span>Time:&nbsp;</span><span id="trajanje"></span><br>
+                            <span>Hard scale:&nbsp;</span><span id="tezina">Tezina</span>
                             <br>
-                            <span><a style="color: gray;" id ="pdfFajl">pdf recepta</a></span>
+                            <span><a style="color: gray;" id ="pdfFajl">pdf of recipe</a></span>
                             <br>
                             <br>
                             <p id="priprema"></p>
@@ -162,7 +165,7 @@ http://www.templatemo.com/tm-507-victory
             <div class="row c">
                 
                 <div class="col-md-8 col-md-offset-2 comments" id="sviKomentari">
-                    <h3>Komentari</h3>
+                    <h3>Comments</h3>
                     <div class="row" id="original" hidden>
                         <div class="col-xs-10 col-xs-offset-1 comment">
                             <p class="commentText" id="komTekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore? Eos hic eum ipsa quod totam dolor officiis quas vero esse quidem minus quos cumque, quam nesciunt recusandae, quasi voluptatibus.</p>
@@ -184,13 +187,13 @@ http://www.templatemo.com/tm-507-victory
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1 addComment">
                                 <fieldset>
-                                    <textarea name="" id="myComment" cols="50" rows="5" class="form-control" placeholder="Komentar..."></textarea>
+                                    <textarea name="" id="myComment" cols="50" rows="5" class="form-control" placeholder="Comment..."></textarea>
                                 </fieldset>
                             </div>
                             
                             <div class="col-xs-10 col-xs-offset-1 addComment">
                                 <fieldset>
-                                    <button type="submit" id="dugmeKomentar" class="btn">Dodaj komentar</button>
+                                    <button type="submit" id="dugmeKomentar" class="btn">Add comment</button>
                                 </fieldset>
                             </div>
                         </div>
@@ -207,7 +210,7 @@ http://www.templatemo.com/tm-507-victory
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 addComment">
                             <fieldset>
-                                <button type="submit" class="btn" id="dugmeOcena">Dodaj ocenu</button>
+                                <button type="submit" class="btn" id="dugmeOcena">Add mark</button>
                             </fieldset>
                         </div>
                     </div>
@@ -223,7 +226,7 @@ http://www.templatemo.com/tm-507-victory
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Copyright 2021, Jovan Pavlović i Jelisaveta Jevtić, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+                    <p>Copyright 2021, Jovan Pavlović i Jelisaveta Jevtić, Department for Software engineering School of electrical engineering, University of Belgrade</p>
                 </div>
             </div>
         </div>

@@ -44,7 +44,18 @@ http://www.templatemo.com/tm-507-victory
                     <div id="main-nav" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a class="sel" href="index.html">Početna</a></li>
-                            <li><a href="recepti.html"><b>Recepti</b></a></li>
+                            <li>                                
+                                <div class="dropdown">
+                                    <button class="dropbtn"><a href="recepti.html">˅ Recepti</a>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a id="predjelo">Predjelo</a>
+                                        <a id="glavnoJelo">Glavno jelo</a>
+                                        <a id="desert">Desert</a>
+                                        <a id="užina">Užina</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li><a href="dodajRecept.html">Dodaj recept</a></li>
                             <li><a href="mojNalog.html">Moj nalog</a></li>
                             <li><a href="oNama.html">O nama</a></li>
@@ -54,7 +65,7 @@ http://www.templatemo.com/tm-507-victory
                                 </button>
                                 <div class="dropdown-content">
                                     <a href="#">Srpski</a>
-                                    <a href="#">Engleski</a>
+                                    <a href="babarogaEn.html">Engleski</a>
                                 </div>
                                 </div>
                             </li>
@@ -150,6 +161,28 @@ http://www.templatemo.com/tm-507-victory
             event.preventDefault();
             $('#main-nav').toggleClass("open");
         });
+        $("a").click(function(){
+        let ok = false;
+        if($(this).attr("id") == 'predjelo'){
+            localStorage.setItem("prikazKategorije","predjelo");
+            ok = true;
+        }
+        if($(this).attr("id") == 'glavnoJelo'){
+            localStorage.setItem("prikazKategorije","glavno jelo");
+            ok = true;
+        }
+        if($(this).attr("id") == 'užina'){
+            localStorage.setItem("prikazKategorije","užina");
+            ok = true;
+        }
+        if($(this).attr("id") == 'desert'){
+            localStorage.setItem("prikazKategorije","desert");
+            ok = true;
+        }
+        if(ok == true)
+            document.location.href="kategorija.html"
+        return;
+        })
     });
 
     </script>

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+/*  TEST BIO SAMO  
     let recepti=[
         {	
             kategorija: "predjelo",
@@ -50,7 +51,7 @@ $(document).ready(function(){
         }
     
     
-    ];
+    ];*/
 
     inicjalizacija();
     popuniSveRecepte();

@@ -43,28 +43,29 @@ http://www.templatemo.com/tm-507-victory
                     <!--/.navbar-header-->
                     <div id="main-nav" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a class="sel" href="index.html">Početna</a></li>
+                            <li><a class="sel" href="indexEn.html">Main page</a></li>
                             <li>                                
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="recepti.html">˅ Recepti</a>
-                                </button>
-                                <div class="dropdown-content">
-                                    <a id="predjelo">Predjelo</a>
-                                    <a id="glavnoJelo">Glavno jelo</a>
-                                    <a id="desert">Desert</a>
-                                    <a id="užina">Užina</a>
+                                    <button class="dropbtn"><a href="receptiEn.html">˅ Recipes</a>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a id="predjelo">Appetizer</a>
+                                        <a id="glavnoJelo">Main course</a>
+                                        <a id="desert">Desert</a>
+                                        <a id="užina">Snack</a>
+                                    </div>
                                 </div>
-                            </div></li>
-                            <li><a href="dodajRecept.html">Dodaj recept</a></li>
-                            <li><a href="mojNalog.html">Moj nalog</a></li>
-                            <li><a href="oNama.html"><b>O nama</b></a></li>
+                            </li>
+                            <li><a href="dodajReceptEn.html">Add new Recipe</a></li>
+                            <li><a href="mojNalogEn.html">My profile</a></li>
+                            <li><a href="oNamaEn.html"><b>About us</b></a></li>
                             <li>                            
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="#">˅ Jezik</a>
+                                <button class="dropbtn"><a href="#">˅ Language</a>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#">Srpski</a>
-                                    <a href="oNamaEn.html">Engleski</a>
+                                    <a href="oNama.html">Serbian</a>
+                                    <a href="#">English</a>
                                 </div>
                                 </div>
                             </li>
@@ -76,28 +77,32 @@ http://www.templatemo.com/tm-507-victory
             </div>
             <!--/.container-->
         </div>
+        <!--/.header-->
 
 
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div id = "tekstONAMA" class="col-md-12">
-                        <h2 id = "centar1">O NAMA<hr></h2>
-                        <p id = "tekst2">Sajt najvišeg kvaliteta koji će od početnika napraviti vrsne kuvare! Pri biranju recepta moguće je filtrirati rezultat prema vašem nivou biranjem nivoa težine recepta! Zaljubićete se u kuvanje i naći novu inspiraciju čitanjem blogova čiji su autori najpoznatiji svetski kuvari! Takodje nudimo i opciju dnevnog menija, koji će vam učiniti kuvanje zanimljivijim i naterati Vas da pokušate svaki dan da spremite nešto novo! U budućnosti je planirano da se uvedu kategorije dnevnih menija (fitnes, post, veganska itd) kako bi meni odgovarao vašem planu ishrane! Uživajte u kuvanju!
+                        <h2 id = "centar1">About us<hr></h2>
+                        <p id = "tekst2">A site of the highest quality that will make beginners excellent chefs! When choosing a recipe, it is possible to filter the result according to your level by selecting the weight level of the recipe! You will fall in love with cooking and find new inspiration by reading blogs authored by the world's most famous chefs! We also offer a daily menu option, which will make cooking more interesting and make you try to prepare something new every day! In the future, it is planned to introduce categories of daily menus (fitness, fasting, vegan, etc.) to make the menu fit your diet plan! Enjoy cooking!
                         </p>
                         <hr>
                         <div id = "slike">
                             <div class="col-xs-4 privremeno">
-                                <h4>Najnoviji blogovi!</h4>
-                                <img src="img/blog_post_01.jpg" alt="">
-                                
+                                <h4>Latest blogs!</h4>
+                                <a href="kovacevicEn.html">
+                                <img src="img/blog_post_01.jpg" alt="">     
+                                </a>
                             </div>
                             <div class="col-xs-4 privremeno">
-                                <h4>Najpopularniji recepti</h4>
+                                <h4>The most popular recipes</h4>
+                                <a href="receptiEn.html">
                                 <img src="img/pecenaPiletina.png" alt="">
+                                </a>
                             </div>
                             <div class="col-xs-4 privremeno">
-                                <h4>Dnevni meni!</h4>
+                                <h4>Daily Menu</h4>
                                 <img src="img/blog_post_03.jpg" alt="">
                             </div>
                         </div>
@@ -113,27 +118,27 @@ http://www.templatemo.com/tm-507-victory
             <div class="row" id = "unos">
                 <div class="col-md-6">
                     <div class="section-heading">
-                        <h2>Pošaljite nam poruku</h2>
+                        <h2>Send us a message</h2>
                     </div>
                     <form id="contact" action="" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Vaše ime..." required>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required>
                                 </fieldset>
                                 <fieldset>
-                                    <input name="email" type="text" class="form-control" id="email" placeholder="Vaš mejl..." required>
+                                    <input name="email" type="text" class="form-control" id="email" placeholder="Your mail..." required>
                                 </fieldset>
                                 <fieldset>
-                                    <input name="phone" type="text" class="form-control" id="phone" placeholder="Vaš mobili..." required>
+                                    <input name="phone" type="text" class="form-control" id="phone" placeholder="Your phone number..." required>
                                 </fieldset>
                             </div>
                             <div class="col-md-6">
                                 <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Vaša poruka..." required></textarea>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required></textarea>
                                 </fieldset>
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Pošaljite poruku</button>
+                                    <button type="submit" id="form-submit" class="btn">Send message</button>
                                 </fieldset>
                             </div>
                         </div>
@@ -141,8 +146,8 @@ http://www.templatemo.com/tm-507-victory
                 </div>
                 <div class="col-md-6">
                     <div class="section-heading contact-info">
-                        <h2>Kontakt informacije</h2>
-                        <p>U slučaju da imate bilo kakva pitanja,primedbe ili sugestije na rad sajta kontaktirajte nas putem ove forme! Takodje stojimo i na raspologanju za konsultacije i eventualne predloge novih rešenja! <br><br><em>Bulevar Kralja Aleksandra 75 <br>Beograd, Srbija</em></p>
+                        <h2>Contact information</h2>
+                        <p>In case you have any questions, remarks or suggestions on the work of the site, contact us via this form! We are also available for consultations and possible proposals for new solutions! <br> <br> <em> Bulevar Kralja Aleksandra 75 <br>Belgrade, Serbia</em></p>
                     </div>
                 </div>
             </div>
@@ -176,7 +181,7 @@ http://www.templatemo.com/tm-507-victory
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Copyright 2021, Jovan Pavlović i Jelisaveta Jevtić, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+                    <p>Copyright 2021, Jovan Pavlović i Jelisaveta Jevtić, Department for Software engineering School of electrical engineering, University of Belgrade</p>
                 </div>
             </div>
         </div>

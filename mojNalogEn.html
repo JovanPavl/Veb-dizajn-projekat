@@ -7,7 +7,7 @@
 Victory Template
 http://www.templatemo.com/tm-507-victory
 -->
-        <title></title>
+        <title>KuvaRica - My profile</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,16 +18,16 @@ http://www.templatemo.com/tm-507-victory
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/padajuciMeni.css">
-        <link rel="stylesheet" href="css/sviRecepti.css">
 
         <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/sviRecepti.js"></script>
+        <script src="js/mojNalog.js"></script>
         <script src="js/skokKategorija.js"></script>
-
     </head>
 
     <body>
@@ -46,29 +46,29 @@ http://www.templatemo.com/tm-507-victory
                     <!--/.navbar-header-->
                     <div id="main-nav" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a class="sel" href="index.html">Početna</a></li>
+                            <li><a class="sel" href="indexEn.html">Main page</a></li>
                             <li>                                
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="recepti.html">
-                                   <b>˅ Recepti</b></a>
-                                </button>
-                                <div class="dropdown-content">
-                                    <a id="predjelo">Predjelo</a>
-                                    <a id="glavnoJelo">Glavno jelo</a>
-                                    <a id="desert">Desert</a>
-                                    <a id="užina">Užina</a>
+                                    <button class="dropbtn"><a href="receptiEn.html">˅ Recipes</a>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a id="predjelo">Appetizer</a>
+                                        <a id="glavnoJelo">Main course</a>
+                                        <a id="desert">Desert</a>
+                                        <a id="užina">Snack</a>
+                                    </div>
                                 </div>
-                            </div></li>
-                            <li><a href="dodajRecept.html">Dodaj recept</a></li>
-                            <li><a href="mojNalog.html">Moj nalog</a></li>
-                            <li><a href="oNama.html">O nama</a></li>
+                            </li>
+                            <li><a href="dodajReceptEn.html">Add new Recipe</a></li>
+                            <li><a href="mojNalogEn.html"><b>My profile</b></a></li>
+                            <li><a href="oNamaEn.html">About us</a></li>
                             <li>                            
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="#">˅ Jezik</a>
+                                <button class="dropbtn"><a href="#">˅ Language</a>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="#">Srpski</a>
-                                    <a href="sviReceptiEn.html">Engleski</a>
+                                    <a href="mojNalog.html">Serbian</a>
+                                    <a href="#">English</a>
                                 </div>
                                 </div>
                             </li>
@@ -80,39 +80,20 @@ http://www.templatemo.com/tm-507-victory
             </div>
             <!--/.container-->
         </div>
+        <!--/.header-->
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 bc">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item" aria-current="page"><a href="recepti.html">Recepti</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">svi recepti</li>
-                        </ol>
-                    </nav>
-                </div>  
-            </div>
-        </div>
-    </section>
+    
 
     <section class="myRecipes">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">
-                        <h2>Svi recepti</h2>
+                        <h2>My recipes</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-offset-3 col-md-6" style="text-align: center;" id="searchBar">
-                        <input type="text" id="nazivJela" placeholder="pretražite jelo..">
-                        &nbsp; Sortiraj po: &nbsp;  oceni &nbsp;
-                        <input type="radio" id="PoOcenama" name="ime">
-                        &nbsp; tezini &nbsp;
-                        <input type="radio" id="PoTezini" name="ime">
-                </div>
+            <div class="row" id="mojiRecepti">
                 <div id="original" class="col-md-6" hidden>
                     <div class="blog-post">
                         <img id="slika" src="img/blog_post_01.jpg" alt="">
@@ -120,25 +101,44 @@ http://www.templatemo.com/tm-507-victory
                         <div class="right-content">
                             <h3><a id="naslov" href=""></a></h3>
                             <p id="priprema"></p>
+                            <button id="brisanje" class="btn">Delete recipe</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <div class="row" id="mojiRecepti">
-                
             </div>
         </div>
     </section>
 
 
- 
+    <section class="myRecipes">
+        <div class="container" id="komentariOcene">
+            <div class="row" >
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>My comments and marks</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row myCommentMark" id="originalKom" hidden>
+                <div class="col-xs-4"><img id="kSlika" src="img/blog_post_01.jpg" alt=""></div>
+                <div class="col-xs-8 right">
+                    <h3> <a id="kNaslov">Headline</a> </h3>
+                    <span id="kKorisnik">author</span>
+                    <hr>
+                    <h5>My comment:</h5>
+                    <p id="kTekst"></p>
+                    <h5 id="kOcena">My mark: </h5> 
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Copyright 2021, Jovan Pavlović i Jelisaveta Jevtić, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+                    <p>Copyright 2021, Jovan Pavlović i Jelisaveta Jevtić, Department for Software engineering School of electrical engineering, University of Belgrade</p>
                 </div>
             </div>
         </div>

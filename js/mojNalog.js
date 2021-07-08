@@ -4,9 +4,12 @@ $(document).ready(function(){
     
     inicijalizacija();
     popuniStranicu();
-
+    if(localStorage.getItem("ulogovan") == null){               //ako niko nije ulogovan skoni na stranicu za logovanje
+        document.location.href="kategorija.html"
+    }
 
     function popuniStranicu() {
+
         let mojiRecepti = recepti.filter(e => e.korisnik==korisnik);
 
         let original = $("#original");

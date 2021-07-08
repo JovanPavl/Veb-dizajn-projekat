@@ -27,6 +27,7 @@ http://www.templatemo.com/tm-507-victory
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/mojNalog.js"></script>
+        <script src="js/skokKategorija.js"></script>
     </head>
 
     <body>
@@ -46,7 +47,17 @@ http://www.templatemo.com/tm-507-victory
                     <div id="main-nav" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a class="sel" href="index.html">Početna</a></li>
-                            <li><a href="recepti.html">Recepti</a></li>
+                            <li>                                
+                                <div class="dropdown">
+                                <button class="dropbtn"><a href="recepti.html">˅ Recepti</a>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a id="predjelo">Predjelo</a>
+                                    <a id="glavnoJelo">Glavno jelo</a>
+                                    <a id="desert">Desert</a>
+                                    <a id="užina">Užina</a>
+                                </div>
+                            </div></li>
                             <li><a href="dodajRecept.html">Dodaj recept</a></li>
                             <li><a href="mojNalog.html"><b>Moj nalog</b></a></li>
                             <li><a href="oNama.html">O nama</a></li>
@@ -56,7 +67,7 @@ http://www.templatemo.com/tm-507-victory
                                 </button>
                                 <div class="dropdown-content">
                                     <a href="#">Srpski</a>
-                                    <a href="#">Engleski</a>
+                                    <a href="mojNalogEn.html">Engleski</a>
                                 </div>
                                 </div>
                             </li>
