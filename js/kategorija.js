@@ -39,6 +39,6 @@ $(document).ready(function(){
         $(".page-heading h1").text(kategorija);
         $("#breadcrumb-kat").text(kategorija);
         if (kategorija=="užina") kategorija="uzina";
-        if (kategorija=="glavno jelo") kategorija="glavno";
+        if (kategorija=="glavno jelo") kategorija="glavno jelo";
     }
 });

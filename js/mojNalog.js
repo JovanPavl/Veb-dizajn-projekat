@@ -65,7 +65,6 @@ $(document).ready(function(){
             let recept = recepti[i];
             let ocena = mojeOcene.find(e => e.naslov == recept.naslov);
             let komentar = mojiKomentari.find(e => e.naslov == recept.naslov);
-
             if (ocena != null || komentar!=null) {
                 let novi = original.clone(true);
                 $("#komentariOcene").append(novi);
